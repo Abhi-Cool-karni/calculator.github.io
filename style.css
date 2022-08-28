@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --darkBlue : #000f0f;
+  --amber : #fa6400;
+  --lightPink: #CE7BB0;
+  --cream:#FFBCD0;
+  --white:#fff;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background: var(--darkBlue);
+}
+
+h1{
+  text-align: center;
+  margin: 20px;
+  color: var(--white);
+}
+
+img{
+  width: 25px;
+  height: auto;
+  background: var(--white);
+}
+
+.calculator{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30em;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 270px;
+  height: auto;
+  border: 3px outset var(--cream);
+  box-shadow:10px 10px 10px #000;
+  border-radius: 10px;
+}
+
+#answer{
+  height: 50px;
+  border-radius: 10px;
+  padding: 10px;
+  color: #fff;
+  font-size: 25px;
+  background: #87bc52;
+  border: 3px outset #000;
+  box-shadow: 2px 2px #000;
+  margin: 10px;
+}
+
+.rows{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.numbers, .operators, .eql-clr-input{
+  width: 40px;
+  height: 50px;
+  border: 3px outset var(--amber);
+  box-shadow: 3px 3px 5px #000;
+  border-radius: 5px;
+  color: var(--darkBlue);
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.eql-clr{
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.eql-clr-input{
+  width: 115px;
+  height: 40px;
+}
+
+#answer::placeholder{
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--white);
+  padding: 10px;
+}

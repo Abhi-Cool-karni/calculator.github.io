@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1> <img src="cal.svg"> Simple Calculator</h1>
+  
+   <main class="calculator">
+     <form name="form1">
+       <!-- Answers -->
+      <input id="answer" type="text" name="answer" placeholder="0" disabled><br>
+      <!-- Numbers -->
+      <section class="rows">
+        <input type="button" class="numbers" value="1"  onclick="form1.answer.value += '1'">
+        <input type="button" class="numbers" value="2"  onclick="form1.answer.value += '2'">
+        <input type="button" class="numbers" value="3"
+        onclick="form1.answer.value += '3'">
+        <input type="button" class="numbers" value="4"
+        onclick="form1.answer.value += '4'">
+        <input type="button" class="operators" value="+"
+        onclick="form1.answer.value += '+'">  <!-- operator-->
+      </section>
+
+      <section class="rows">
+        <input type="button" class="numbers" value="5"
+        onclick="form1.answer.value += '5'">
+        <input type="button" class="numbers" value="6"
+        onclick="form1.answer.value += '6'">
+        <input type="button" class="numbers" value="7"
+        onclick="form1.answer.value += '7'">
+        <input type="button" class="numbers" value="8"
+        onclick="form1.answer.value += '8'">
+        <input type="button" class="operators" value="-"
+        onclick="form1.answer.value += '-'">  <!-- operator-->
+      </section>
+
+      <section class="rows">
+        <input type="button" class="numbers" value="9"
+        onclick="form1.answer.value += '9'">
+        <input type="button" class="numbers" value="0"
+        onclick="form1.answer.value += '0'">
+        <input type="button" class="operators" value="/"
+        onclick="form1.answer.value += '/'">  <!-- operator-->
+        <input type="button" class="operators" value="*"
+        onclick="form1.answer.value += '*'">  <!-- operator-->
+        <input type="button" class="operators" value="."
+        onclick="form1.answer.value += '.'">  <!-- operator-->
+      </section>
+      
+     <section class="eql-clr">
+      <!-- Equals to -->
+        <input type="button" class="eql-clr-input" id="equals" value="="
+        onclick="form1.answer.value = eval(form1.answer.value)"> 
+        <!--operator-->
+        <!-- Clear All -->
+        <input type="button" class="eql-clr-input" id="clear" value="Clear"
+        onclick="form1.answer.value= ' '">  <!-- operator-->
+      </section>
+     </form>
+   </main>
+  </body>
+</html>
